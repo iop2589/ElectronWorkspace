@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>test election</title>
-
+    
 </head>
+
 <body>
-<span id="test">test</span>
-<!--In Electron, this is the correct way to include jQuery-->
-<script>window.$ = window.jQuery = require('jquery');</script>
-<script src="./js/test.js"></script>
+    <span id="test">test</span>
+    <div id="map" style="width:500px;height:400px;"></div>
+    <!--In Electron, this is the correct way to include jQuery-->
+    <script>window.$ = window.jQuery = require('jquery');</script>
+    <script src="./js/test.js"></script>
+    <!--<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8c5d9cf02527fc8d8c32d1b7fbc519aa"></script>
+    <script>
+            var container = document.getElementById('map');
+            var options = {
+                center: new daum.maps.LatLng(33.450701, 126.570667),
+                level: 3
+            };
+            var map = new daum.maps.Map(container, options);
+    </script>-->
 </body>
 </html>
