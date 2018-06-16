@@ -1,15 +1,10 @@
 {
-  "name": "ElectronWorkspace",
-  "version": "1.0.0",
-  "description": "",
+  "name": "hello-electron",
+  "version": "0.0.1",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "macha": "0.0.0"
+  "dependencies": {
+    "electron": "^2.0.2",
+    "electron-prebuilt": "^1.4.13",
+    "jquery": "^3.3.1"
   }
 }
