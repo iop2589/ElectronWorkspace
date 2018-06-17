@@ -7,14 +7,22 @@
     <title>test election</title>
     
 </head>
-
+<style>
+    webview {
+        display:inline-flex;
+        width:640px;
+        height:480px;
+      }
+</style>
 <body>
     <span id="test">test</span>
-    <div id="map" style="width:500px;height:400px;"></div>
-    <!--In Electron, this is the correct way to include jQuery-->
+    <!--<div id="map" style="width:500px;height:400px;"></div>-->
+    <div id="instafeed"></div>
     <script>window.$ = window.jQuery = require('jquery');</script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="./js/test.js"></script>
+    <!--In Electron, this is the correct way to include jQuery-->
+    <!--<script src="./js/insta.js"></script>-->
     <!--<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8c5d9cf02527fc8d8c32d1b7fbc519aa"></script>
     <script>
             var container = document.getElementById('map');
