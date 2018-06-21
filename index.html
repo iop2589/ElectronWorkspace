@@ -14,13 +14,24 @@
         height:480px;
       }
 </style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 <body>
+    <button class='btn btn-danger' id='btnClick' onclick='setWb("redmine")'>레드마인</button>
+    <button class='btn btn-info' id='btnClick' onclick='setWb("anysupport")'>애니서포트</button>
+    <div id="wbList" witdth="1000" height="1000">
+        <webview id='wb' src='' >
+
+    </div>
     <span id="test">test</span>
     <!--<div id="map" style="width:500px;height:400px;"></div>-->
-    <div id="instafeed"></div>
+    <!-- <div id="instafeed"> -->
+    </div>
     <script>window.$ = window.jQuery = require('jquery');</script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="./js/test.js"></script>
+    <script src="./js/wv.js"></script>
     <!--In Electron, this is the correct way to include jQuery-->
     <!--<script src="./js/insta.js"></script>-->
     <!--<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=8c5d9cf02527fc8d8c32d1b7fbc519aa"></script>
