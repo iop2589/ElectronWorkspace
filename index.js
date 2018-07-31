@@ -1,5 +1,4 @@
 'use strict';
-
 const electron = require('electron');
 const app = electron.app;  // 어플리케이션 기반을 조작 하는 모듈.
 const Menu = electron.Menu;
@@ -15,6 +14,8 @@ const template = [
     ]
   }
 ]
+
+
 const menu = Menu.buildFromTemplate(template);
 Menu.setApplicationMenu(menu);
 // 윈도우 객체를 전역에 유지합니다. 만약 이렇게 하지 않으면
